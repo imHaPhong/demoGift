@@ -1,0 +1,110 @@
+.backgound-header{
+    padding:0 20px;
+    background-color: #CC1F3D;
+}
+.header-list{
+    background-color: #CC1F3D;
+}
+.header-menu{
+    height: 76px;
+    display: flex;
+    align-items: center;
+}
+.header-menu-left{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.header-img{
+    object-fit: contain;
+    max-width: 235px;
+    padding-right: 30px;
+    margin-bottom: 15px;
+}
+
+.header-location{
+    color: white;
+    align-items: center;
+    display: flex;
+    font-size: 300;
+    height: 46px;
+    width: 152px;
+    background-color: #99172E;
+    border-radius: 5px;
+}
+
+.header-location-icon{
+    font-size: 2.6rem;
+    max-width: 20px;
+    margin: 5px;
+}
+
+.header-location-detail{
+    font-size: 1.2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-list{
+    padding: 0 25px;
+
+}
+.header-item{
+    flex: 1;
+    color: white;
+    font-size: 1.5rem;
+    padding-right: 15px;
+    display: inline-block;
+}
+.header-listIcon{
+    font-size: 500;
+    font-size: 2rem;
+    color: white;
+}
+.header-icon{
+    padding-left: 20px;
+}
+
+.header-location{
+    position: relative;
+}
+
+.header-locationDetail{
+    padding:10px 20px;
+    color: black;
+    top: 60px;
+    left: 235px;
+    position: absolute;
+    min-width: 150px;
+    min-height: 106px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    box-shadow: 2px 3px 2px #c9c9c9;
+    background-color: white;
+    animation-name: slideDetail;
+    animation-duration: 0.3s;
+    display: none;
+
+}
+
+@keyframes slideDetail{
+    from{
+        opacity: 0;
+        top: 90px;
+    }
+    to{
+        opacity: 1;
+        top: 60px;
+    }
+}
+#locationClick:checked ~ .header-locationDetail{
+    display: block;
+}
+
+.locationDetail-list{
+    list-style-type: none;
+}
+.locationDetail-item{
+    padding: 8px 0;
+}
