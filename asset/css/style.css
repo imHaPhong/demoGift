@@ -1,5 +1,5 @@
 .backgound-header{
-    padding:0 20px;
+    padding:20px 0;
     background-color: #CC1F3D;
 }
 .header-list{
@@ -81,6 +81,7 @@
     font-size: 1.4rem;
     font-weight: 500;
     box-shadow: 2px 3px 2px #c9c9c9;
+    border: 1px solid #E1E1E1;
     background-color: white;
     animation-name: slideDetail;
     animation-duration: 0.3s;
@@ -107,4 +108,162 @@
 }
 .locationDetail-item{
     padding: 8px 0;
+}
+
+.nav-item{
+    position: relative;
+}
+
+.nav-item-link{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.show-sub{
+    position: absolute;
+    cursor: default;
+}
+.sub-nav-i1{
+    top: 200%;
+    box-shadow: 2px 3px 2px #c9c9c9;
+    border: 1px solid #E1E1E1;
+    background-color: white;
+    min-width: 450px;
+    height: 550px;
+    padding: 25px;
+    display: none;
+}
+.sub-nav-i1::before,
+.sub-nav-i2::before{
+    content: '';
+    width: 35%;
+    height: 30px;
+    top: -15px;
+    left: -1px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+.sub-nav-menu{
+    color: black;
+}
+.sub-nav-subLink, 
+.sub-nav-itemLink{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.sub-nav-subLink{
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.new::after{
+    content: "MỚI";
+    font-weight: lighter;
+    font-size: 1rem;
+    min-width: 32px;
+    min-height: 16px;
+    padding: 2px 5px;
+    border-radius: 2px;
+    color: white;
+    background-color: #3689C3;
+    margin-left: 4px;
+}
+
+.hot-sale::after{
+    content: "BÁN CHẠY";
+    font-weight: lighter;
+    font-size: 1rem;
+    min-width: 32px;
+    min-height: 16px;
+    padding: 2px 5px;
+    border-radius: 2px;
+    color: white;
+    background-color: #CC0000;
+    margin-left: 4px;
+}
+
+.sub-nav-list{
+    padding: 10px 0;
+    list-style-type: none;
+}
+.sub-nav-item{
+    padding: 5px 0;
+}
+
+.sub-nav-itemLink-icon{
+    font-size: 0.8rem;
+    padding-left: 40%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sub-nav-itemMore{
+    position: relative;
+}
+
+.sub-nav-itemLink--detail{
+    width: 272px;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 70%;
+    box-shadow: 2px 3px 2px #c9c9c9;
+    border: 1px solid #E1E1E1;
+    display: none;
+}
+
+.sub-nav-itemMore:hover .sub-nav-itemLink--detail{
+    display: block;
+}
+
+.sub-nav-itemLink--detail ul{
+    list-style-type: none;
+    padding: 10px 15px;
+}
+.sub-nav-itemLink--detail-item{
+    padding: 5px 0;
+}
+.sub-nav-itemLink--detail-item a{
+    text-decoration: none;
+    color: black;
+}
+.nav-i1:hover .sub-nav-i1{
+    display: block;
+}
+.nav-i2:hover .sub-nav-i2{
+    display: block;
+}
+.sub-nav-i2{
+    top: 200%;
+    position: absolute;
+    background-color: white;
+    width: 272px;
+    border: 1px solid #E1E1E1;
+    display: none;
+}
+.sub-nav-i2-item{
+    border-bottom: 1px solid #E1E1E1;
+    padding: 10px 20px;
+}
+.sub-nav-i2-item a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+.sub-nav-i2--detail ul{
+    padding: 0px 10px;
+}
+.sub-nav-i2--detail .sub-nav-itemLink--detail-item{
+    padding: 10px;
+    border-bottom: 1px solid #E1E1E1;
+}
+.sub-nav-itemLink--detail-item:last-child{
+    border-bottom: none;
 }
